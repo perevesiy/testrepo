@@ -1,0 +1,85 @@
+.thegem-menu-custom .menu-custom-header {
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+.thegem-menu-custom .menu-custom-header.main-menu-item {
+  color: var(--thegem-to-h6-color);
+}
+.thegem-menu-custom .menu-custom-header a, .thegem-menu-custom .menu-custom-header > span {
+  display: flex;
+  align-items: center;
+}
+.thegem-menu-custom .menu-custom-header:not(:hover) a {
+  color: inherit;
+}
+.thegem-menu-custom .menu-custom-header .separator {
+  display: flex;
+  font-size: 0;
+  line-height: 0;
+  margin-top: 14px;
+}
+.thegem-menu-custom .menu-custom-header .separator span {
+  width: 200px;
+  display: block;
+  background-color: var(--thegem-to-divider-color, #dfe5e8);
+}
+.thegem-menu-custom .menu-custom-header.light {
+  font-family: var(--thegem-to-light-title-font-family);
+  font-style: var(--thegem-to-light-title-font-style);
+  font-weight: normal;
+}
+.thegem-menu-custom ul.nav-menu-custom {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.thegem-menu-custom ul.nav-menu-custom li a, .thegem-menu-custom ul.nav-menu-custom li > span {
+  display: flex !important;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  margin-left: -0.7em;
+  margin-right: -0.7em;
+  transition: all 0.3s;
+}
+.thegem-menu-custom ul.nav-menu-custom li:not(:hover) a {
+  color: inherit;
+}
+.thegem-menu-custom ul.nav-menu-custom li:hover a {
+  color: var(--thegem-to-menu-level3-hover-color, #ffffff);
+  background-color: var(--thegem-to-menu-level1-color-hover, #00bcd4);
+}
+.thegem-menu-custom .icon {
+  display: block;
+  width: 16px;
+  margin-right: 12px;
+  text-align: center;
+  flex: none;
+}
+.thegem-menu-custom .icon i {
+  display: block;
+  font-size: inherit;
+}
+.thegem-menu-custom .label {
+  color: #ffffff;
+  background-color: var(--thegem-to-styled-color1, #00BCD4);
+  font-size: var(--thegem-to-h6-font-size-tiny, 7px);
+  line-height: 1;
+  padding: 0.3em 0.5em;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+}
+.thegem-menu-custom.menu-indicator ul.nav-menu-custom li a:after, .thegem-menu-custom.menu-indicator ul.nav-menu-custom li > span:after {
+  width: 9px;
+  height: 16px;
+  font-weight: normal;
+  font-family: "thegem-icons";
+  font-style: normal;
+  content: "\e601";
+  font-size: 16px;
+  line-height: 16px;
+}
+.thegem-menu-custom:not(.menu-indicator) ul.nav-menu-custom li a:after, .thegem-menu-custom:not(.menu-indicator) ul.nav-menu-custom li > span:after {
+  content: none !important;
+}
+
+/*# sourceMappingURL=thegem-menu-custom.css.map */

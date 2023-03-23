@@ -1,0 +1,50 @@
+/*
+@todo: merge & minify this
+*/
+@import url("css/cssreset.css") screen;
+@import url("css/cssfonts.css") screen;
+@import url("css/default.css") screen;
+@import url("css/print.css") screen;
+@import url("css/nexle_de.css") screen;
+
+
+.navMain a {
+    padding-top: 0.7em;
+    padding-bottom: 0.1em;
+    display: block;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 107.69%;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+li#menu-item-24625 {
+    padding-top: 24px !important;
+}
+li#menu-item-24627 {
+    padding-top: 24px !important;
+}
+li#menu-item-24629 {
+    padding-top: 24px !important;
+}
+li#menu-item-24631 {
+    padding-top: 24px !important;
+}
+li#menu-item-24633 {
+    padding-top: 24px !important;
+}
+li#menu-item-24635 {
+    padding-top: 24px !important;
+}
+li#menu-item-24637 {
+    padding-top: 24px !important;
+}
+
+li#menu-item-25955 {
+    padding-top: 24px !important;
+}
+
+li#menu-item-24639 {
+    padding-left: 8px !important;
+}

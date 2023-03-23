@@ -1,0 +1,1703 @@
+html { -webkit-font-smoothing: antialiased; overflow-y: scroll;}
+
+/* align checkboxes, radios, text inputs with their label */
+input[type=radio] { vertical-align: text-bottom; }
+input[type=checkbox] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+/* bicubic resizing for non-native sized IMG:
+code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/*------------------------------------*\
+    Generic styles defaultfontsize: 13px
+\*------------------------------------*/
+html {
+    overflow-x: hidden;
+}
+body, html  {
+    color: #5D5D5D;
+    background-color: #EFECE2;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #4D290B;
+}
+h1, h2 {
+    font-size: 161.54%;         /* 21px */
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid #F7F5EF;
+    margin-bottom: 1.3em;
+    padding-bottom: 0.7em;
+}
+p {
+    margin-bottom: 0.8em;
+}
+a {
+    color: #a2c653;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+strong, b {
+    font-weight: 700;
+}
+em {
+    font-style: italic;
+}
+
+strong em,
+em strong{
+	font-weight: 600;
+	font-size: 107.69%;
+	font-style: normal;
+	color: #4D290B;
+}
+
+.defaultText{
+	font-size: 100%; 
+	font-weight: 400;
+	color: #5D5D5D;
+}
+
+hr {
+	margin: 10px 0;
+	border-top: 0px;
+	border-bottom: 2px solid #F7F5EF;
+    }
+
+font {
+	color: #5D5D5D;
+}
+	
+
+.primary ol {
+    list-style-type: decimal;
+    padding-left: 2em;
+}
+.primary ul {
+    list-style-type: square;
+	/*background-color: #F7F5EF;*/
+    padding: 2em;
+}
+
+.primary h3 {
+        color: #4D290B;
+        font-size: 107.69%;
+		font-weight: 700;
+        margin-bottom: 0.4em;
+    }
+
+.primary h3 strong{
+        font-weight: 600;
+    }
+
+	
+.primary blockquote {
+    margin: 1em 2em;
+}
+
+.alignleft {
+    float: left;
+}
+
+img.alignleft {
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+/*------------------------------------*\
+    Forms
+\*------------------------------------*/
+input[type=text],
+input[type=tel],
+input[type=url],
+input[type=password],
+input[type=email],
+textarea,
+select {
+    border: 1px solid #a2c653;
+    padding: 6px;
+}
+select {
+    background-color: #ffffff;
+}
+
+button,
+input[type=button],
+input[type=submit],
+.button
+{
+    box-shadow: inset 0 0 5px #b3b3b3;
+    background-color: #A2C653;
+    border-width: 0;
+    color: #FFFFFF;
+    font-size: 115.38%;             /* 15px */
+    font-weight: 700;
+    padding: 0.3em 2em;
+}
+
+.et_lb_button a{
+	border-radius: 0px!important;
+	box-shadow: inset 0 0 5px #b3b3b3;
+	border: 0px!important;
+
+}
+
+.et_lb_button span {
+	background: none!important;	
+	font-size: 107.69%;             /* 15px */
+    font-weight: 700;
+	padding: 0.3em 1em;
+	text-shadow: 0px!important;
+}
+
+.et_lb_button_green a{
+	background: none!important;
+	background-color: #A2C653!important;	
+	border: 0px;
+	text-shadow: 0px!important;
+}
+
+
+input:hover{
+    opacity: 0.8;
+}
+
+.ui-datepicker {
+    background-color: #ffffff;
+    border: 1px solid #a2c653;
+    padding: 6px;
+}
+    .ui-datepicker-header {
+
+    }
+        .ui-datepicker-header a {
+            cursor: pointer;
+        }
+        .ui-datepicker-header a.ui-datepicker-next {
+            float: right;
+        }
+
+    .ui-datepicker  th {
+        padding: 0.4em;
+    }
+    .ui-datepicker td {
+        text-align: center;
+    }
+
+
+.frm-show-form {
+
+}
+    .primary .frm-show-form > * {
+        box-shadow: inset 0 0 12px #e6e5e3;
+        margin: 1em 0;
+    }
+    .primary .frm-show-form > * {
+        padding: 3em 5em;
+    }
+    .secondary .frm_form_widget {
+        box-shadow: inset 0 0 12px #e6e5e3;
+        padding: 2em 1.5em;
+		background-color: #F7F5EF;
+		border-radius: 10px;
+    }
+
+        .frm-show-form h3 {
+            color: #4D290B;
+            font-weight: 700;
+            font-size: 100%;         /* 18px */
+        }
+        
+        .form-field {
+            margin: 1em 0;
+            overflow: hidden;
+        }
+        .form-field label {
+            display: inline-block;
+            width: 180px;
+            float: left;
+        }
+			 
+        .form-field input,
+		.form-field textarea,
+        .form-field select {
+            width: 240px;
+            float: left;
+        }
+		
+		
+		.form-field input[type="radio"] 
+		{
+			width: auto;
+		}
+		
+		     
+            .frm_opt_container label {
+                width: auto;
+                margin-right: 1em;
+            }
+	
+		
+        .form-field select {
+            width: 254px; /* + padding + border */
+        }
+        .frm_error {
+            float: left;
+			font-style: italic;
+			color: #ed2024; 
+        }
+        .frm_blank_field input,
+        .frm_blank_field select,
+        .frm_blank_field textarea {
+            border: 1px solid #ed2024;
+        }
+		 .form-field  #recaptcha_widget_div{
+			float: left;
+		 }
+
+
+/*------------------------------------*\
+    Site Structure
+\*------------------------------------*/
+
+.wrapper {
+    overflow: auto;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+    .wrapper-shadow {
+        width: 1050px;
+        float: left;
+        padding: 0 2px 2px 2px;
+    }
+        .adTop {
+            overflow: hidden;
+        }
+        /* header */
+        .wrapper-shadow > header {
+            background-color: #EFECE2;
+            padding-top: 26px;
+			margin: 0px 10px;
+        }
+            .wrapper-shadow > header:after {
+                clear: both;
+                content: '';
+                display: block;
+            }
+            .logoSite,
+            .navSecond {
+                height: 80px;
+                min-width: 300px;
+            }
+            .logoSite {
+                float: left;
+                width: 50%;
+            }
+            .navSecond {
+                float: right;
+                width: 50%;
+            }
+            .navSecond:after {
+                display: block;
+                clear: both;
+                content: '';
+            }
+            .navSecondRow {
+
+            }
+            .navSecondRow:after {
+                display: block;
+                clear: both;
+                content: '';
+            }
+            .navSecondFirstRow {
+
+            }
+                .navSecondFirstRow > span {
+                    font-size: 92.31%;
+                    float: right;
+                }
+
+            .navSecondLastRow {
+                margin-top: 0em;
+            }
+
+            .navSecond .quicksearch {
+                width: 42%;
+                float: left;
+                margin-top: 0.25em;
+            }
+            .navSecond .fb-like {
+                float: left;
+                width: 150px;
+            }
+            .navSecond .loginRegisterButtons {
+                width: 50%;
+                max-width: 220px;
+                float: right;
+            }
+            .wrapper-shadow > header nav {
+                width: 100%;
+                float: left;
+            }
+
+            /* content */
+            .wrapper-shadow > .content {
+                min-height: 35em;
+                overflow: hidden;
+                background-color: #ffffff;
+                padding: 0 20px 20px 20px;
+				box-shadow: 0px 0px 10px 0px #BCBCBC;
+				margin: 0px 10px;
+            }
+		    
+		   
+			.breadcrumb {
+				height: 24px;
+				margin-top: 18px;
+			}
+
+			.primary {
+				float: left;
+				margin-top: 18px;
+				/*width: 49.01%;*/
+				width: 620px;
+				overflow: auto;
+			}
+		
+
+			.secondary {
+				float: left;
+				/*margin-left: 1.58%;*/
+				/*width: 23.71%;*/
+				width: 300px;
+				margin-top: 18px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			.secondary > aside {
+				margin-top: 20px;
+			}
+			.secondary > aside:first-child {
+				margin-top: 0;
+			}
+
+			.wrapper-shadow > footer  {
+				padding: 3em 1em 3em 4em;
+				overflow: auto;
+			}
+			
+			.wrapper-shadow > footer .inner {
+				margin: 0 auto;
+				width: 95%;
+				}
+            .wrapper-shadow > footer .inner > div {
+                float: left;
+                width: 27%;
+                overflow: hidden;
+            }
+			.wrapper-shadow > footer .inner div#text-6 {
+                width: 24%
+            }
+			.wrapper-shadow > footer .inner div#text-7 {
+                width: 17%;
+            }
+			
+			
+            .wrapper-shadow > footer .inner h4 {
+                color: #5D5D5D;
+                margin-bottom: 1em;
+            }
+			
+
+        .adSky {
+            float: left;
+            overflow: hidden;
+            /*margin-left: 1.97%;*/
+            /*width: 23.71%;*/
+            width: 160px;
+        }
+.wrapper.frontPage {
+
+}
+
+.wrapper .et_lb_module {
+				margin-bottom: 2.3em;
+			}
+
+.wrapper .et_lb_first{
+	margin-bottom: 1.5em;	 
+}
+
+
+    .frontPage h3 {
+        font-size: 123.08%;         /* 16px */
+        margin-bottom: 0.3em;
+		font-weight: 700;
+    }
+
+
+/*
+article {
+    margin-top: 1em;
+}
+
+    article h1 a {
+        font-size: 123%;
+        font-weight: bold;
+        color: #000000;
+    }
+    */
+/*------------------------------------*\
+    $navMain
+\*------------------------------------*/
+.navMain {
+    background-color: #a2c653;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 1.5em;
+	min-height: 2.8em;
+}
+    .navMain ul {
+        overflow: auto;
+    }
+        .navMain li {
+            float: left;
+            margin-right: 2em;
+        }
+        .navMain li:nth-child(6) {
+            float: right;
+
+        }
+        .navMain li:nth-child(7) {
+            float: right;
+
+        }
+            .navMain a {
+                padding-top: 0.7em;
+                padding-bottom: 0.1em;
+                display: block;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 107.69%;         /* 14px */
+                text-decoration: none;
+                border-bottom: 3px solid transparent;
+          }
+            .navMain .current_page_item,
+			.navMain .page_item:hover {
+                border-bottom: 3px solid #ffffff;
+            }
+	
+    .navMain .children {
+        display: none;
+        z-index: 100000;
+    }
+/*------------------------------------*\
+    $contentNavigation
+\*------------------------------------*/
+.contentNavigation {
+}
+	.contentNavigation:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.contentNavigation .nav-previous {
+		float: left;
+	}
+	.contentNavigation .nav-next {
+		float: right;
+	}
+/*------------------------------------*\
+    $globalSidebar
+\*------------------------------------*/
+.globalSidebar {
+
+}
+
+/*------------------------------------*\
+$widget_openxwpwidget
+\*------------------------------------*/
+.widget_openxwpwidget {
+
+}
+    .widget_openxwpwidget h3 {
+        font-size: 76.92%;
+        color: #5d5d5d;
+		font-weight: 400;
+    }
+	
+	
+/*------------------------------------*\
+    $loginRegisterButtons
+\*------------------------------------*/
+.loginRegisterButtons {
+    background-color: #a2c653;
+    border: 0.3em solid #ffffff;
+    border-radius: 10px;
+    overflow: auto;
+	cursor: pointer;
+}
+    .loginRegisterButtons li {
+        width: 50%;
+        text-align: center;
+        float: left;
+    }
+    .loginRegisterButtons li:first-child {
+        background-color: #4D290B;
+    }
+        .loginRegisterButtons a {
+            padding: 0.5em 0;
+            color: #ffffff;
+            display: block;
+        }
+
+    .loginRegisterButtons .loginForm {
+        display: none;
+        position: absolute;
+        top: 40px;
+        padding: 30px 50px 50px 50px;
+        margin-left: -135px;
+        z-index: 10000;
+        background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");    /* to get IE acknowledged the padding on hover*/
+    }
+    .admin-bar .loginRegisterButtons .loginForm {
+        top: 100px;
+    }
+    .loginRegisterButtons li:first-child:hover .loginForm {
+        display: block;
+    }
+        .loginRegisterButtons .loginForm form {
+            background: #ffffff;
+            box-shadow: 0 0 1px #a2c653;
+            padding: 1.5em;
+			box-shadow: 0px 0px 10px 0px rgb( 0, 1, 1 );
+        }
+        .loginRegisterButtons .loginForm p {
+            text-align: left;
+        }
+        .loginRegisterButtons .loginForm p:last-child {
+            margin-bottom: 0;
+        }
+
+        .loginRegisterButtons .login-username label,
+        .loginRegisterButtons .login-password label {
+            display: inline-block;
+            width: 7em;
+        }
+
+
+
+/*------------------------------------*\
+    $quicksearch
+\*------------------------------------*/
+
+.quicksearch {
+    border: 1px solid #a2c653;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: right;
+}
+    .quicksearch input,
+    .quicksearch button {
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+    .quicksearch input {
+        width: 77%;
+        margin-top: 0.1em;
+    }
+    .quicksearch button {
+        width: 19%;
+        font-size: 0;
+        line-height: 0;
+        background-color: #a2c653;
+    }
+    .quicksearch button img {
+        width: 100%;
+    }
+/*------------------------------------*\
+    $sloganBox
+\*------------------------------------*/
+/* need .wrapper to get higher priority */
+.wrapper .sloganBox {
+    list-style-type: none;
+    overflow: auto;
+    background-color: #F7F5EF;
+    padding: 1.5em 0 1.5em 2em;
+    box-shadow: inset 0 0 7px #DDDAD2;
+}
+    .sloganBox li {
+        font-size: 131%;            /* 17px */
+        float: left;
+        padding-left: 1.7em;
+        margin-left: 4em;
+        background-image: url(../assets/icon-slogan-box.png);
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+    }
+    .sloganBox li:first-child {
+        margin-left: 0;
+    }
+
+
+
+/*------------------------------------*\
+    $et_lb_box
+\*------------------------------------*/
+.et_lb_box .et_lb_module_content {
+    border: 5px solid #a2c653;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: inset 0 0 16px #cccccc;
+}
+    .et_lb_module_content p,
+    .et_lb_module_content h3,
+    .et_lb_module_content input {
+        margin-bottom: 0.5em;
+    }
+
+
+    h3.et_lb_box_title {
+        color: #4D290B;
+        font-size: 161.54%;         /* 21px */
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 700;
+    }
+
+	
+
+	
+/*------------------------------------*\
+$findSchoolsBox
+\*------------------------------------*/
+.findSchoolsBox {
+}
+    .findSchoolsBox p {
+        font-size: 115.38%;                /* 15px */
+    }
+    .findSchoolsBox .et_lb_module_content {
+        height: 193px;
+    }
+    .findSchoolsBox input,
+    .findSchoolsBox select {
+        margin-bottom: 1em;
+    }
+    .findSchoolsBox input[type="text"] {
+        width: 90%;
+        padding: 4%;
+        margin-bottom: 1em;
+    }
+
+    .findSchoolsBox button,
+    .findSchoolsBox input[type="button"],
+    .findSchoolsBox input[type="submit"] {
+        width: 98%;
+        color: transparent;
+        height: 33px;
+        background-color: #ff0303;
+        border-radius: 3px;
+        background-image: url(../assets/bg_box-hundeschulen-finden.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: -999px;
+    }
+	
+	.frm_submit .frm_ajax_loading{
+		display: none;
+	}
+
+
+
+.widget_FacebookLikeBox h3,
+h4 {
+	font-size: 115.38%;                /* 15px */
+	margin-bottom: 0.3em;
+	color: #5d5d5d;
+	font-weight: 700;
+}
+
+	
+/*------------------------------------*\
+$topRegionsBox
+\*------------------------------------*/
+.topRegionsBox {
+
+	}
+    .topRegionsBox h3 {
+        font-size: 115.38%;                /* 15px */
+        font-weight: 700;
+        color: #5d5d5d;
+        margin-bottom: 1em;
+    }
+	
+
+    .topRegionsBox ul {
+        overflow: auto;
+        list-style: none;
+    }
+    .et_lb_module .topRegionsBox ul {
+        list-style: none;   /* override default style */
+    }
+        .topRegionsBox li {
+            float: left;
+            width: 50%;
+        }
+        .topRegionsBox a {
+            font-size: 107.69%;
+            color: #5d5d5d;
+        }
+
+		
+/*------------------------------------*\
+$commentBox
+\*------------------------------------*/		
+
+	.commentBox article{
+		padding: 10px 0;
+		border-bottom: 2px solid #F7F5EF;
+    }
+	
+	.commentBox article:last-child{
+		border-bottom: 2px solid #F7F5EF;
+	}
+	
+	.commentBox article .moreDetails{
+	
+	}
+	
+	
+/*------------------------------------*\
+$coursesBox
+\*------------------------------------*/
+ul.coursesBox {
+    width: 100%;
+    list-style-type: none;
+    padding: 0; 
+    overflow: auto;
+}
+    .coursesBox li {
+        width: 49%;
+        float: left;
+		background-color: #F7F5EF;
+		margin: 1px;
+    }
+	
+        .coursesBox li a {
+            color: #5D5D5D;
+            font-size: 107.69%;     /*14 px */
+            margin-top: 0.3em;
+            display: inline-block;
+        }
+
+    .coursesBox li:before {
+        content: '';
+        display: list-item;
+        float: left;
+        margin: 0 0.5em;
+        width: 32px;
+        height: 32px;
+        background-image: url(../assets/sprite-courses.png);
+        background-repeat: no-repeat;
+    }
+
+    .coursesBox .agility:before {
+		background-position: 0px 0px;
+    }
+    .coursesBox .clickertraining:before {
+		background-position: 0px -31px;
+    }
+    .coursesBox .dogdance:before {
+		background-position: 0px -64px;
+    }
+    .coursesBox .dogfrisbee:before {
+		background-position: 0px -96px;
+    }
+    .coursesBox .dummytraining:before {
+		background-position: 0px -128px;
+    }
+    .coursesBox .hundeerziehung:before {
+		background-position: 0px -160px;
+    }
+    .coursesBox .gebrauchshunde:before {
+		background-position: 0px -192px;
+    }
+    .coursesBox .logieren:before {
+		background-position: 0px -224px;
+    }
+    .coursesBox .mantrailing:before {
+		background-position: 0px -255px;
+    }
+    .coursesBox .obedience:before {
+		background-position: 0px -288px;
+    }
+    .coursesBox .behavior:before {
+		background-position: 0px -320px;
+    }
+    .coursesBox .welps:before {
+		background-position: 0px -352px;
+    }
+		
+/*------------------------------------*\
+$topSchoolsBox
+\*------------------------------------*/
+.topSchoolsBox {
+	
+}
+	.et_builder .topSchoolsBox:after {
+		clear: both;
+		content: '';
+		display: block;
+		height: 0;
+		font-size: 0;
+	}
+	.topSchoolsBox > div {
+ 		border-top: 2px solid #F7F5EF;
+		border-bottom: 2px solid #F7F5EF;
+	}
+	.topSchoolsBox > p {
+		text-align: right;
+	}
+    .topSchoolsBox article {
+        height: 80px;
+        position: relative;
+        overflow: hidden;
+        padding: 15px 0;
+        border-top: 1px solid #ffffff;
+    }
+	.et_builder .topSchoolsBox article {
+		width: 48%;
+		float: left;
+	}
+    .et_builder .topSchoolsBox article:nth-child(2n) {
+		margin-left: 20px;
+	}
+		.topSchoolsBox .image {
+			float: left;
+            width: 78px;
+            height: 80px;
+            background-image: url(../assets/school-fallback.png);
+            background-position: center center;
+            background-color: #F7F5EF;
+            background-repeat: no-repeat;
+            box-shadow: inset 0 0 10px #e6e5e3;
+            overflow: hidden;
+            text-align: center;
+			margin-right:10px;
+			border: 1px solid #e6e5e3;
+		}
+			.topSchoolsBox .image img {
+				height: 100%;
+				width: auto;
+				max-width: none;
+			}
+		.topSchoolsBox .content {
+			float: left;
+            width: 205px;
+		}
+			.topSchoolsBox .content header {
+				text-align: right;
+			}
+		
+			.topSchoolsBox .content header > a{
+				float: left;
+				font-weight: 700;
+			}
+		
+		
+		.topSchoolsBox .moreDetails {
+			display: none;
+            position: absolute;
+            left: 36%;
+            top: 28%;
+		}
+			.topSchoolsBox .moreDetails a {
+				display: block;
+				box-shadow: inset 0 0 5px #b3b3b3;
+				background-color: #A2C653;
+				color: #FFFFFF;
+				font-size: 115.38%;             /* 15px */
+				font-weight: 700;
+				padding: 0.3em 2em;
+			}
+			
+	.topSchoolsBox article:hover {
+        
+    }
+    .topSchoolsBox article:nth-child(n+3):hover {
+		border-top-color: #a2c653;
+	}
+        .topSchoolsBox article:hover .content {
+            opacity: 0.5;			
+        }
+        .topSchoolsBox article:hover .moreDetails {
+            display: inline-block;
+			cursor: pointer;
+        }
+        
+    .secondary .topSchoolsBox h3 {
+        font-size: 114.28%;
+        font-weight: 700;
+        color: #5d5d5d;
+        margin-bottom: 1em;
+    }
+
+/*------------------------------------*\
+$schoolList
+\*------------------------------------*/
+#frmMapDisplay {
+/*  float: right;
+    width: 300px;
+*/
+}
+.schoolList {
+	border-top: 1px solid #F7F5EF;
+}
+		.schoolList article {
+			overflow: auto;
+			padding: 1.0em 0;
+			border-top: 1px solid #F7F5EF;
+			border-bottom: 1px solid #F7F5EF;
+			position: relative;
+    }
+
+		.schoolList .image {
+			float: left;
+            width: 98px;
+            height: 100px;
+			border: 1px solid #e6e5e3;
+            background-image: url(../assets/school-fallback.png);
+            background-position: center center;
+            background-color: #F7F5EF;
+            background-repeat: no-repeat;
+            box-shadow: inset 0 0 10px #e6e5e3;
+            overflow: hidden;
+            text-align: center;
+        }
+        .schoolList .image img {
+            height: 100%;
+        }
+        .schoolList .content {
+            float: left;
+            margin-left: 15px;
+            width: 70%;
+        }
+		  .schoolList .content header {
+            margin-bottom: 0.7em;
+        }
+		  .schoolList .content em{
+            display: block;
+        }
+		
+				
+		.schoolList article .premium,
+		.schoolDetail article .premium		{
+			background-image: url(../assets/premium-hundeschule.png);
+			background-position: right top;
+			background-repeat: no-repeat;
+			height: 15px;
+			float: right;
+			position: relative;
+			width: 65px;
+			display: block;
+			margin-bottom: 0.3em;
+		}
+
+        .schoolList .commentStars {
+			float: right;
+       }
+	   
+		.commentStars:after {
+			content: '';
+			display: inline-block;
+			background-image: url(../assets/icon-star.png);
+			width: 14px;
+			height: 15px;
+			margin-left: 2px;
+	}
+	
+	
+        .schoolList .moreDetails {
+            display: none;
+            left: 47%;
+            position: absolute;
+            top: 40%;
+        }
+        .schoolList .moreDetails a{
+            display: block;
+            box-shadow: inset 0 0 5px #b3b3b3;
+            background-color: #A2C653;
+            color: #FFFFFF;
+            font-size: 115.38%;             /* 15px */
+            font-weight: 700;
+            padding: 0.3em 2em;
+        }
+        .schoolList header a {
+            font-size: 123%;
+            font-weight: 700;
+        }
+        .schoolList em {
+            font-style: italic;
+        }
+
+    .schoolList article:hover {
+        border-top-color: #a2c653;
+        border-bottom-color: #a2c653;
+    }
+        .schoolList article:hover .content {
+            opacity: 0.5;			
+        }
+        .schoolList article:hover .moreDetails {
+            display: inline-block;
+			cursor: pointer;
+        }
+		
+	.tablenav {
+		margin: 3em 0;
+		background-color: #F7F5EF;
+		background-repeat: no-repeat;
+		box-shadow: inset 0 0 10px #E6E5E3;
+		padding: 0px;
+}
+
+		.tablenav-pages {
+			height: 15px;
+		}
+		.tablenav .page-numbers{
+		border: 1px solid #A2C653;
+		background-color: #A2C653;
+		width: 1.5em;
+		color: #FFF;
+		padding: 0.5em 0.5em;
+		text-align: center;
+		display: inline-block;
+		}
+
+		.tablenav .current{
+		background-color: #ffffff;
+		color: #000;
+		}
+
+
+/*------------------------------------*\
+$schoolListSidebar widgets
+\*------------------------------------*/
+.schoolListSidebar {
+    background-repeat: no-repeat;
+}
+
+
+.secondary > aside.schoolListSidebar {
+    margin-top: 0;
+}
+/* the map */
+.schoolListSidebar:first-child {
+    padding: 0;
+}
+    .schoolListSidebar:first-child .textwidget {
+        overflow: auto;
+    }
+
+	
+/* the map end */
+
+
+/*------------------------------------*\
+$customSearchBox $ColorbackgoundBox 
+\*------------------------------------*/
+
+.customSearchBox{
+	margin-bottom: 1em;
+}
+
+.greyColoredBox{
+  background-color: #F7F5EF;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 10px #e6e5e3;
+  padding: 20px;
+}	
+
+    .schoolListSidebar h3,
+	.frm_form_widget h3{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 138.46%;             /* 18px */
+        font-weight: 700;
+        margin-bottom: 0.5em;
+    }
+    .schoolListSidebar input[type=text],
+    .schoolListSidebar select
+		{
+        width: 240px;
+        margin-bottom: 1em;
+    }
+    .schoolListSidebar select {
+        width: 254px; /* + padding + border */
+    }
+    .schoolListSidebar label {
+        /*font-size: 115.39%;*/
+        display: inline-block;
+        margin-bottom: 0.3em;
+    }
+    .schoolListSidebar em,
+    .schoolListSidebar .searchLabel_219 {
+        font-size: 123.07%;     /* 16px */
+    }
+    .schoolListSidebar input[type=checkbox] {
+        margin: 0.5em 0.5em 0em 1em;
+    }
+    .schoolListSidebar input[type=submit] {
+        background-color: #B6AD99;
+        box-shadow: inset 0 0 4px #666666;;
+        border-radius: 3px;
+        width: 254px;
+		background-image: url(../assets/icon-find-schools.png);
+        background-position: 96% 50%;
+        background-repeat: no-repeat;
+    }
+
+
+
+	
+.resizeMapLink.resizeMapLinkIncrease input,
+.resizeMapLink.resizeMapLinkDecrease input  {
+	background-color: #F5F4EF;
+    background-image: url(../assets/icon_resizeMapLinkIncrease.png);
+    background-position: 94% 50%;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    color: #4D290B;
+    padding: 5px 20px;
+    text-align: left;
+    width: 100%;
+	font-size: 100%;
+	font-weight: 400;
+}
+	
+.resizeMapLink.resizeMapLinkIncrease input {
+
+}
+
+.resizeMapLink.resizeMapLinkDecrease input {
+	background-image: url(../assets/icon_resizeMapLinkDecrease.png);
+}
+
+/*------------------------------------*\
+$schoolDetail
+\*------------------------------------*/
+.schoolDetail {
+    overflow: hidden;
+}
+    .schoolDetail h3 {
+        color: #4D290B;
+        font-size: 107.69%;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+    }
+	
+	.schoolDetail h2 {
+        color: #4D290B;
+        font-size: 107.69%;
+        /*font-weight: 700;*/
+        margin-bottom: 0.4em;
+    }
+	
+    .schoolDetail h1 {
+		border-bottom: 1px solid #F7F5EF;
+		font-size: 161.54%;
+		font-weight: 700;
+    }
+    .schoolDetail > div {
+        float: left;
+        width: 100%;
+    }
+    .schoolDetail header {
+
+    }
+    .schoolDetail .images {
+        width: 220px;
+        min-height: 220px;
+    }
+        .schoolDetail .image {
+            height: 165px;
+            overflow: hidden;
+            background-image: url(../assets/school-fallback.png);
+            background-position: center center;
+            background-color: #F7F5EF;
+            background-repeat: no-repeat;
+            box-shadow: inset 0 0 10px #e6e5e3;
+        }
+            .schoolDetail .image img {
+                width: 100%;
+            }
+        .schoolDetail .thumbs {
+
+        }
+            .schoolDetail .thumbs span {
+                display: inline-block;
+                width: 31%;
+                max-height: 50px;
+                overflow: hidden;
+                margin-top: 0.5em;
+                margin-right: 3%;
+            }
+            .schoolDetail .thumbs span:nth-child(3n+0) {
+                margin-right: 0;
+            }
+                .schoolDetail .thumbs img {
+                    cursor: pointer;
+                    width: 100%;
+                }
+    .schoolDetail .contact {
+        margin-left: 20px;
+        width: 380px;
+        min-height: 220px;
+    }
+        .schoolDetail table {
+            margin-top: 1em;
+        }
+            .schoolDetail table td:first-child {
+                width: 5em;
+            }
+    .schoolDetail .details {
+        margin-top: 2em;
+    }
+    .schoolDetail .map {
+        margin-top: 1em;
+
+    }
+    .schoolDetail .comments {
+        margin-top: 3em;
+    }
+        .schoolDetail .comments h3 {
+		    border-bottom: 2px solid #F7F5EF;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+		
+            .schoolDetail .commenter {
+                display: inline;
+                color: #4D290B;
+                font-weight: 700;
+            }
+            .schoolDetail .comment {
+                border-bottom: 2px solid #F7F5EF;
+                margin-bottom: 1em;
+				padding-bottom: 1em;
+            }
+            .schoolDetail .commentEntry .star {
+                display: inline-block;
+                width: 14px;
+                height: 15px;
+                margin-bottom: 2px;
+                background-image: url(../assets/icon-star.png);
+			
+            }
+			.schoolDetail .commentEntry .starpostcard {
+                display: inline-block;
+                width: 90px;
+                height: 17px;
+                margin-bottom: 2px;
+                background-image: url(../assets/icon-star-yes.png);
+			
+            }
+			.schoolDetail .comment .frm_text_exposed_show{
+				display: block;
+				}
+
+				
+				
+				
+				
+/*------------------------------------*\
+$register
+\*------------------------------------*/
+
+.fullwidth .content{
+	padding: 0 50px;
+}
+
+
+.fullwidth .primary{
+	width: auto;
+}
+
+.fullwidth .primary .form-field label{
+	width: 45%;
+	font-size:115.38%;
+}
+
+.fullwidth .primary .form-field  h3{
+	margin-bottom: 1em;
+}
+
+
+
+#frm_form_6_container {
+}
+    /* hack for "Bitte geben Sie Ihre Adresse ein" */
+    #frm_form_6_container .form-field input[type=text] {
+        width: 48%;
+    }
+
+	#frm_form_6_container .form-field select{
+		width: 50%;
+	}
+	
+	#frm_form_6_container .form-field textarea,
+	#frm_form_6_container .form-field input{
+		width: 48%;
+	}
+	
+    #frm_form_6_container .submit {
+        overflow: auto;
+    }
+		#frm_form_6_container .submit input{
+			float: right;
+		}
+		
+			
+		
+	.form-field .frm_opt_container input{
+			width: 30px!important;
+		}
+	
+/* combine phonenumbers to one field */
+	#frm_form_6_container .form-field
+	{
+		/*display: inline-block;*/
+		margin: 0.5em 0;
+	}
+		
+	#frm_form_6_container .combine-frmfield{
+		margin: 0;
+		display: inline;
+		padding: 0;
+		line-height: 1;
+	}
+	
+		.hideobject h3,
+		.combine-frmfield label {
+			display: none;
+		}
+		.combine-frmfield.frmfields1 label{
+			display: block;
+		}
+	
+		
+		#frm_form_6_container .combine-frmfield.frmfields1 input{
+			width: 5%;
+			border-right: 0;
+		}
+		
+		#frm_form_6_container .combine-frmfield.frmfields2 input{
+		width: 5%;
+		border-right: 0;
+		border-left: 0;
+		}
+		
+		#frm_form_6_container .combine-frmfield.frmfields3 input{
+			width: 35%;
+			border-left: 0;
+		}
+		
+	
+/*------------------------------------*\
+Image Slider
+\*------------------------------------*/
+
+.et_lb_slider {
+}
+    .et_lb_slider .flexslider {
+        /*
+        border: 1px solid #a2c653;
+        */
+        border-radius: 10px;
+        box-shadow: 0 0 1px #a2c653;
+        margin-right: 1px;
+        padding: 5px;
+        width: auto;
+		overflow: hidden;
+		height: 223px;
+    }
+        .et_lb_slider .flexslider img {
+            border-radius: 10px;
+        }
+
+    .et_lb_slider .flex-control-nav {
+        bottom: 8px;
+    }
+    .et_lb_slider .flex-control-nav li {
+        margin-left: 12px;
+    }
+    .et_lb_slider .flex-control-nav li a {
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        background-color: #d3cdc2;
+    }
+    .et_lb_slider .flex-control-nav li a.flex-active {
+        background-color: #9cc303;
+
+    }
+/*
+    .et_lb_slider  .et_attachment_overlay {
+        border: 4px solid #ffffff;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+    .et_lb_slider ol.flex-control-nav {
+        background-image: none;
+        bottom: 0 !important
+    }
+    .et_lb_slider .flex-control-nav:before {
+        background-image: none;
+    }
+    .et_lb_slider .flex-control-nav:after {
+        background-image: none;
+    }
+*/
+
+
+/*------------------------------------*\
+Register
+\*------------------------------------*/
+
+.checkbox-courses label{
+	float: none;
+}
+
+.checkbox-courses label.frm_primary_label,
+.checkbox-courses .frm_opt_container{
+	float: left;
+	}
+
+
+.table_prices-compare label{
+		width: auto;
+	}
+
+
+table.table_prices-compare{ 
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;      
+	box-shadow: inset 0 0 16px #CCC;
+	}
+table.table_prices-compare tr{ 	
+    border-top: 1px solid #ffffff;
+}
+
+table.table_prices-compare tr td{ 	
+    border-bottom: 1px solid #F7F5EF;
+	padding: 1em 1em;
+	text-align: center;
+}
+
+table.table_prices-compare tr td:first-child {
+	text-align: left;
+	width: 50%;
+}
+table.table_prices-compare tr td:nth-child(2){ 	
+	background-color: #ecf4dd;
+	width: 16.5%;
+}
+
+table.table_prices-compare tr td:nth-child(3){ 	
+	background-color: #bed786;
+	width: 16.5%;
+}
+table.table_prices-compare tr td:nth-child(4){ 	
+	background-color: #a2c653;
+	width: 16.5%;
+}
+
+table.table_prices-compare tr:last-child td{ 	
+    text-align: left;
+}
+table.table_prices-compare tr:first-child td{ 	
+	font-weight: 700;
+	background: none;	
+}
+
+table.table_prices-compare tr:last-child td{ 	
+	font-weight: 600;
+	background: none;	
+	vertical-align: top;
+}
+
+table.table_prices-compare tr:last-child td span{ 	
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+
+#frm_form_6_container .form-field table.table_prices-compare tr:last-child td div input{ 	
+	width: 100%;
+}
+
+#frm_form_6_container .form-field table.table_prices-compare tr:last-child td div label{ 	
+	width: 100%;
+	text-align: center;
+}
+
+.form-upload {
+	margin: 4em 0em; 
+}
+
+.form-upload .frm_description{
+	display: inline-block;
+	width: 60%;
+	margin-top: 2em;
+}
+
+.form-upload label{
+	color: #4D290B;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.form-conditions label{
+	display: block;
+}
+
+.form-conditions > div{
+	width: 100%;
+}
+
+.form-conditions .frm_opt_container .frm_checkbox label{
+	width: 55%;
+}
+
+/**********Hundeschulenblog***************/
+
+.post-list article {
+	border-bottom: 2px solid #F7F5EF; 
+	padding: 1em 0;
+	margin-bottom: 1em;
+}
+
+.post-list article h2{ 
+	border: 0px; 
+	margin-bottom: 0; 
+}
+
+.post-list article h3{
+	font-weight: 400;
+}
+
+.post-list article .more-link{
+	display: block;
+	text-align: right;
+}
+
+
+
+/**********Search***************/
+
+.search .cse .gsc-control-cse, .gsc-control-cse{
+	margin-top: 1em;
+}
+.search  form.gsc-search-box{
+	width: 70%;
+}
+
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+margin-left: 8px;
+}
+
+.search .gsc-above-wrapper-area{
+	border-bottom: 0px;
+	width: 70%;
+	margin: 1em 0;
+}
+
+.search .gsc-search-box .gsc-input-box{
+	height: auto;
+	border: 1px solid #A2C653;
+	padding: 3px;
+}
+
+.search .gsc-search-box  input.gsc-search-button, .search .gsc-search-box  input.gsc-search-button:hover, .search .gsc-search-box  input.gsc-search-button:focus{
+	background-color: #A2C653;
+	border-width: 0;
+	color: #FFF;
+	font-size: 115.38%;
+	font-weight: 700;
+	padding: 10px 40px;
+}
+
+
+/***********comments-area**********************/
+
+
+.comments-area .comment-respond {
+	box-shadow: inset 0 0 12px #E6E5E3;
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin-top: 2em;
+	padding: 3em 5em;
+}
+
+.comments-area h2{
+padding: 1em 1.5em 0.5em 1.5em;
+}
+
+.comments-area ol.commentlist{ 
+	list-style-type: none;
+	padding: 1em 3em 2em 3em;
+}
+
+.comments-area ol.commentlist .fn{
+	font-weight: 700;
+}
+
+.comments-area ol.commentlist .says{
+	font-weight: 600;
+}
+
+.comments-area ol.commentlist .comment-meta{
+	padding-bottom: 0.6em;
+	margin-bottom: 0.6em;
+	border-bottom: 1px solid #F7F5EF;
+}
+
+.comments-area label{
+	width: 40%;
+	display: inline-block;	
+}
+
+.comments-area input{
+	width: 49%;
+}
+
+.comments-area textarea{
+	width: 90%;
+	
+}
+
+
+
+
+.navMain a {
+    padding-top: 0.7em !important;
+    padding-bottom: 0.1em;
+    display: block;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 107.69%;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
